@@ -1,4 +1,7 @@
 # I-might-die-for-this
+
+Use a laptop for the best experience since this is not platform-based (I think).
+
 A project by this aspiring software engineering student. (First time taking initiative)
 
 This project was done while I was carrying my slacker of a group in our Systems Analysis and Design (Chapter 2).
