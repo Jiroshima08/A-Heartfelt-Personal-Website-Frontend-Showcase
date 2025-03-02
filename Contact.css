@@ -20,6 +20,17 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation Bar */
+header {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
 .navigation_bar {
     display: flex;
     justify-content: space-between;
@@ -29,7 +40,7 @@ header {
 
 .logo {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: lighter;
     color: #333;
 }
 
@@ -54,6 +65,9 @@ header {
 }
 
 .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     background-color: #330000;
     color: white;
