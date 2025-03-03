@@ -1,6 +1,8 @@
 # I-might-die-for-this
 
-Use a laptop for the best experience since this is not platform-based (I think).
+-- if  you wanna see the code structure,  here it is, happy looking! --
+
+Use a laptop for the best experience (or toggle the "browser mode" on your mobile  chrome) since this is not platform-based.
 
 A project by this aspiring software engineering student. (First time taking initiative)
 
@@ -17,3 +19,5 @@ Used:
 HTML
 CSS
 JavaScript
+
+by Gyro (Jiroshima08)
