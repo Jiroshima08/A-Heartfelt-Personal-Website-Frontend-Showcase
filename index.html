@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <title>Can't be that bad right?</title>
+</head>
+<body>
+
+    <div class="login">
+        <form onsubmit="return validateForm(event)">
+            <h1>Log In</h1>
+            <label>Username</label>
+            <input type="text" id="username" name="username" placeholder="Use your name">
+            <label>Password</label>
+            <input type="password" id="password" name="password" placeholder="Use your name">
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); 
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if ((username === "Dianne" || username === "Dianne Visaya" || username === "Dianne_Visaya" || username === "dianne" || username === "dianne visaya" || username === "dianne_visaya") &&
+                (password === "Dianne" || password === "Dianne Visaya" || password === "Dianne_Visaya" || password === "dianne" || password === "dianne visaya" || password === "dianne_visaya")) {
+                alert("\n\nLogin successful!");
+                window.location.href = "front.html";
+            } else {
+                alert("\nUsername and Password MUST be the same.\n\n[HINT] IT'S YOUR NAME. \n\n(Pangalan nung 5'1 na anghel kuno)");
+            }
+        }
+    </script>
+
+</body>
+</html>

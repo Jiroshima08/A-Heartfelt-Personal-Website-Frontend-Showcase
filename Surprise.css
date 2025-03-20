@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    background: url('https://images.hdqwalls.com/wallpapers/landscape-scenery-minimal-4k-ac.jpg') no-repeat center center/cover;
+    height: 100vh;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.2s;
+}
+
+.navigation_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    transition: padding 0.3s ease-in-out;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #330000;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 100px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.4s;
+}
+
+.contact-btn:hover {
+    background-color: #b12c2cb6;
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.surprise-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.6s;
+}
+
+.surprise-box {
+    width: 150px;
+    height: 150px;
+    background-color: #b81111;
+    color: rgb(230, 203, 203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.surprise-box:hover {
+    background-color: #2c1111;
+    transform: scale(1.1);
+}
+
+.hidden-message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 215, 215);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+.revealed {
+    transform: scale(1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.8s;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #330000;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 0px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #b12c2cb6;
+    animation: pulse 0.5s ease-in-out;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    transition: background 0.3s ease-in-out;
+}

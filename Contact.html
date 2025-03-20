@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can't be that bad right?</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navigation_bar">
+            <div class="logo">About Me</div>
+            <ul class="nav-links">
+                <li><a href="front.html">Home</a></li>
+                <li><a href="MainPage.html">Main</a></li>
+                <li><a href="Mindful.html">Mindful</a></li>
+                <li><a href="Mindful.html#events">Events</a></li>
+                <li><a href="Mindful.html#collection">Collection</a></li>
+                <li><a href="Mindful.html#faqs">FAQs</a></li>
+                <li><a href="Mindful.html#extra">Extras</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            <a href="Contact.html" class="contact-btn">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Found yourself wandering here?</h1>
+            <p><em>this guy's back needs crackin after all that coding</p></em>
+            <a href="#" class="btn" onclick="scrollToSection()">My Infos</a>
+            <script>
+                function scrollToSection() {
+                    document.getElementById("content").scrollIntoView({ behavior: "smooth" });
+                }
+            </script>
+            
+        </div>
+    </section>
+
+<section id="content" class="content">
+    <div class="content-box">
+
+        <img src="https://scontent.fmnl7-1.fna.fbcdn.net/v/t39.30808-6/481004474_2457320637947220_7382243570035664959_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE21ZLbePrxsVnoUb_hFXs52MxQhBt_shLYzFCEG3-yEpHRdjH48zfmzOz9yuPgx8CbRTo58bnMoIe0GndahIAV&_nc_ohc=S3lWW_7MSfcQ7kNvgEDopEm&_nc_oc=AdkbAjY7pSFnwcSYCjQ92AwQqkOCvLOWvcn4xikIsh9finK53ZXD8zpZEMqOjkKAjGI&_nc_zt=23&_nc_ht=scontent.fmnl7-1.fna&_nc_gid=GRtDckhtj4L8mGSHV2qtng&oh=00_AYHuCn8pOrXxQJqvEBhCysIf3TxvX0Hw11OuaJqSaCDcxw&oe=67E17A33" 
+            width="300" class="clickable-image" onclick="toggleSurprise()">
+            <script>
+                function toggleSurprise() {
+                    var box = document.getElementById("surprise-box");
+                    if (box.style.display === "none" || box.style.display === "") {
+                        box.style.display = "block";
+                    } else {
+                        box.style.display = "none";
+                    }
+                }
+                </script>
+        <br>        
+        <h2>Jiroshima Gyro</h2>
+        <br>
+        <ul class="checklist">
+            <li><a href="https://www.facebook.com/noose098/">My Facebook</a></li>
+            <li><a href="https://www.instagram.com/rando_tngg?fbclid=IwY2xjawIxEnlleHRuA2FlbQIxMAABHWNWNtpdvEk1G82g9SsNwzXOemqJ27dNGOFacYX5hzBLbZx-I22WJXb0qQ_aem_4lGezctr_rSRXfkD2024wA">My Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@imgyronotguyronotjiro?is_from_webapp=1&sender_device=pc">My TikTok</a></li>
+            <li><a href="tel:09774444052">My Cellphone</a></li>
+            <li><a href="https://x.com/GyroJiro03">My Twitter</a></li>
+        </ul>
+        <br>
+        <p><em>LinkedIn and Discord soon! Jokes aside, thank you for your time! The given information is for formality as part of the principles we abide in web development -Ma'am Queenee.</em></p>
+        <div id="surprise-box" class="hidden-box">
+            <p>Surprise! Your curiosity with clicking things must have caused this to pop out XD.</p>
+            <br>
+            <a href="Surprise.html" class="btn">Don't Click Me :3</a>
+        </div>
+    </div>
+</section>
+
+<section id="content" class="content-yahoo">
+    <br><br><br>
+    <h2>Who is Gyro?</h2>
+    <br>
+    <p>Gyro is a certified PITA (Pain In The Ass), specializing in annoying the living hell out of short women with massive attitudes—not out of malice, 
+        but because their fiery reactions are too entertaining to resist which fuels his drive even more. 
+        Whether it’s blocking their view just enough to be a nuisance, or calling them “fun-sized”, 
+        he thrives on their funny glares and tiny but deadly swings. 
+        Of course, he wishes in getting smacked, kicked, or verbally threatened, 
+        but to Gyro, it’s all worth it—because life is too short, and some people are EVEN shorter.
+    </p>
+</section>
+<br><br><br>
+
+<script>
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    const sections = document.querySelectorAll(".hero-content");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+        section.style.opacity = 0;
+        section.style.transform = "translateY(50px)";
+        section.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+        observer.observe(section);
+    });
+
+    document.querySelectorAll(".btn").forEach(btn => {
+        btn.addEventListener("mouseover", () => {
+            btn.style.transform = "scale(1.1)";
+            btn.style.transition = "transform 0.3s ease";
+        });
+        btn.addEventListener("mouseout", () => {
+            btn.style.transform = "scale(1)";
+        });
+    });
+
+</script>
+
+<footer class="footer">
+    <p>&copy; 2025 Gyro's Project. All Rights Reserved.</p>
+</footer>
+
+</html>
