@@ -1,10 +1,10 @@
-# I-might-die-for-this
+# A Heartfelt Project
 
 -- if  you wanna see the code structure,  here it is, happy looking! --
 
 Use a laptop for the best experience (or toggle the "browser mode" on your mobile  chrome) since this is not platform-based.
 
-A project by this aspiring software engineering student. (First time taking initiative)
+A project to further hone my Frontend Development skills. (First time taking initiative)
 
 This project was done while I was carrying my slacker of a group in our Systems Analysis and Design (Chapter 2).
 This is a personal website containing everything important to me.
