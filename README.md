@@ -1,23 +1,51 @@
-# A Heartfelt Project
+# 💖 A Heartfelt Personal Website – Frontend Showcase
 
--- if  you wanna see the code structure,  here it is, happy looking! --
+A lovingly crafted personal website by Gyro Vinz L. Sagal, built as a frontend milestone during a Systems Analysis & Design course. This project was my first independent initiative—taking the reins and carrying the team—using HTML, CSS, and JavaScript to share what’s truly important to me.
 
-Use a laptop for the best experience (or toggle the "browser mode" on your mobile  chrome) since this is not platform-based.
+---
 
-A project to further hone my Frontend Development skills. (First time taking initiative)
+## 🎯 Purpose
 
-This project was done while I was carrying my slacker of a group in our Systems Analysis and Design (Chapter 2).
-This is a personal website containing everything important to me.
+During our **Systems Analysis & Design (Chapter 2)** class, I chose to build something meaningful: a deeply personal site that highlights my favorite pages, memories, and creative expression. I didn't want to do the standard group assignment—I needed something authentic that I could complete solo, at my own pace, and enjoyably.
 
-This person did not want to just do it the straightforward way with his fear of failure and rejection—so this fella did it in his way that 
-he could hide his face right away after everything is complete. 
+---
 
-So without further ado~
+## 🌐 Project Highlights
 
+| Feature        | Description |
+|----------------|-------------|
+| **Multi-page layout** | Includes Home, Contact, Surprise, Mindful, and more |
+| **Custom styling**     | Unique CSS (`*.css` files) for each page to set distinct moods |
+| **Interactive elements** | JavaScript-powered interactions (e.g., surprise page) |
+| **Responsive-friendly** | Optimized for desktop; mobile users can toggle browser mode |
 
-Used:
-HTML
-CSS
-JavaScript
+---
 
-by Gyro (Jiroshima08)
+## 🛠️ Technologies Used
+
+- **HTML5** – Semantic structure and content organization  
+- **CSS3** – Custom styling across multiple themes  
+- **JavaScript** – UI behaviors and interactive features  
+
+---
+
+## 👇 Pages Included
+
+- `index.html` – Main landing page, curated introduction  
+- `front.html` – A designed front-facing page  
+- `MainPage.html` – Central dashboard for navigating the site  
+- `Mindful.html` – Thoughtful, personal reflections  
+- `Surprise.html` – Fun, interactive surprises  
+- `Contact.html` – How to get in touch  
+- `smol.html` – Mini-page with compact content or easter eggs  
+
+Each page has its own stylesheet for thematic consistency and creative depth.
+
+---
+
+## 👨‍💻 Author
+
+**Gyro Vinz L. Sagal**  
+Bachelor of Science in Information Technology
+
+---
