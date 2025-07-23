@@ -6,7 +6,7 @@ I built this as a frontend milestone contrary to my learnings with the fundament
 
 ## 🎯 Purpose
 
-During our **Systems Analysis & Design (Chapter 2)** class, I chose to build something meaningful: a deeply personal site that highlights my favorite pages, memories, and creative expression. I didn't want to do the standard group assignment—I needed something authentic that I could complete solo, at my own pace, and enjoyably.
+During our **Web Development** class, I chose to build something meaningful and a way to confess to someone: a deeply personal site that highlights my favorite pages, memories, and creative expression. I didn't want to do the standard group assignment—I needed something authentic that I could complete solo, at my own pace, and enjoyably.
 
 ---
 
