@@ -1,6 +1,6 @@
 # 💖 A Heartfelt Personal Website – Frontend Showcase
 
-A lovingly crafted personal website by Gyro Vinz L. Sagal, built as a frontend milestone during a Systems Analysis & Design course. This project was my first independent initiative—taking the reins and carrying the team—using HTML, CSS, and JavaScript to share what’s truly important to me.
+I built this as a frontend milestone contrary to my learnings with the fundamentals of our Web Development course. This project was my first independent initiative—taking the reins and carrying the team—using HTML, CSS, and JavaScript to share what’s truly important to me. 
 
 ---
 
